@@ -22,9 +22,12 @@ const Navbar = () => {
       <h1 className="text-lg font-semibold font-serif bg-sky-950 px-2 py-2 rounded-4xl text-xl">Umaiz brand</h1>
 
       {/* Mobile Menu Button */}
-      <button className="md:hidden z-50" onClick={() => setIsOpen(!isOpen)}>
-        <img src={assets.menu_icon} alt="Menu" className="w-8 h-8 white-200 " />
-      </button>
+    {/* Mobile Menu Button */}
+<div className="md:hidden absolute top-7 right-4 z-50">
+  <button onClick={() => setIsOpen(!isOpen)}>
+    <img src={assets.menu_icon} alt="Menu" className="w-8 h-8" />
+  </button>
+</div>
 
       {/* Navigation Links */}
       <ul
