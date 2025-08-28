@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import port from '../assets/port.png';
-import blog from '../assets/blog.png';
-import ban from '../assets/ban.png';
-
+import pr1 from '../assets/pr1.png'
+import pr2 from '../assets/pr2.png'
 const projects = [
   {
     title: 'Portfolio Website',
@@ -16,14 +15,14 @@ const projects = [
     title: 'E-commerce App',
     description: 'Full-stack MERN app with shopping cart, user auth, and payment integration.',
     tech: ['MongoDB', 'Express', 'React', 'Node'],
-    image: ban,
+    image: pr1,
     link: '#',
   },
   {
     title: 'Blog Platform',
     description: 'Markdown blog platform with full admin dashboard and JWT authentication.',
     tech: ['Node.js', 'Express', 'MongoDB'],
-    image: blog,
+    image: pr2,
     link: '#',
   },
 ];

@@ -77,8 +77,8 @@ import Untitle from './lab.png'
 import laptop from './bglaptop.png'
 import  pic from './msg.png'
 import gpt from './ChatGPT.png'
-import ban from './ban.png'
-import blog from './blog.png'
+import pr1 from './pr1.png'
+import pr2 from './pr2.png'
 
 
 export const assets = {
@@ -112,7 +112,9 @@ export const assets = {
     Untitle,
     laptop,
     pic, 
-    gpt
+    gpt,
+    pr1,
+    pr2
 }
 
 export const products = [
