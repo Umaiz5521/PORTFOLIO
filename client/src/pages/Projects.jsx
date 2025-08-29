@@ -4,27 +4,28 @@ import port from '../assets/port.png';
 import pr1 from '../assets/pr1.png'
 import pr2 from '../assets/pr2.png'
 const projects = [
-  {
-    title: 'Portfolio Website',
-    description: 'A modern, responsive portfolio built using React, Tailwind CSS, and Framer Motion.',
-    tech: ['React', 'Tailwind', 'Framer Motion'],
-    image: port,
-    link: '#',
-  },
-  {
-    title: 'E-commerce App',
-    description: 'Full-stack MERN app with shopping cart, user auth, and payment integration.',
-    tech: ['MongoDB', 'Express', 'React', 'Node'],
-    image: pr1,
-    link: 'https://futrix-university.netlify.app/',
-  },
-  {
-    title: 'Blog Platform',
-    description: 'Markdown blog platform with full admin dashboard and JWT authentication.',
-    tech: ['Node.js', 'Express', 'MongoDB'],
-    image: pr2,
-    link: 'https://the-umaiz-gym.netlify.app/',
-  },
+ {
+  title: 'Portfolio Website',
+  description: 'A modern, responsive portfolio built using React, Tailwind CSS, and Framer Motion.',
+  tech: ['React', 'Tailwind', 'Framer Motion'],
+  image: port,
+  link: '#',
+},
+{
+  title: 'Futrix University Platform',
+  description: 'A complete MERN-based university web platform with courses, student management, and interactive features for a seamless academic experience.',
+  tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS'],
+  image: pr1,
+  link: 'https://futrix-university.netlify.app/',
+},
+{
+  title: 'Umaiz Gym Website',
+  description: 'A dynamic fitness website with membership plans, training schedules, and an engaging UI built with MERN stack and modern styling.',
+  tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS'],
+  image: pr2,
+  link: 'https://the-umaiz-gym.netlify.app/',
+},
+
 ];
 
 const ProjectCard = ({ project, index }) => {
