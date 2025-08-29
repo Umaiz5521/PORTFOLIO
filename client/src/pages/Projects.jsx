@@ -16,14 +16,14 @@ const projects = [
     description: 'Full-stack MERN app with shopping cart, user auth, and payment integration.',
     tech: ['MongoDB', 'Express', 'React', 'Node'],
     image: pr1,
-    link: '#',
+    link: 'https://futrix-university.netlify.app/',
   },
   {
     title: 'Blog Platform',
     description: 'Markdown blog platform with full admin dashboard and JWT authentication.',
     tech: ['Node.js', 'Express', 'MongoDB'],
     image: pr2,
-    link: '#',
+    link: 'https://the-umaiz-gym.netlify.app/',
   },
 ];
 
