@@ -8,14 +8,10 @@ const footerVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.8,
-      ease: 'easeOut',
-    },
+    transition: { duration: 0.8, ease: 'easeOut' },
   },
 };
 
-// Array with navigation links
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
@@ -34,19 +30,26 @@ const Footer = () => {
       viewport={{ once: true }}
       variants={footerVariants}
     >
-      <div className="max-w-6xl mx-auto text-center space-y-8">
+      <div className="max-w-6xl mx-auto text-center space-y-8 px-4">
         {/* Footer Header */}
-        <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <p className="text-gray-400 text-sm">
+          © {new Date().getFullYear()} Your Name. All rights reserved.
+        </p>
 
         {/* Footer Description */}
-        <p className="text-gray-300 text-base">
-          A passionate web developer focused on creating clean and performant websites. Let's build something amazing together.
+        <p className="text-gray-300 text-base max-w-2xl mx-auto">
+          A passionate web developer focused on creating clean and performant websites. 
+          Let's build something amazing together.
         </p>
 
         {/* Navigation Links */}
-        <div className="flex justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
           {navLinks.map((link) => (
-            <Link key={link.name} to={link.path} className="text-white hover:text-gray-400">
+            <Link
+              key={link.name}
+              to={link.path}
+              className="text-white hover:text-gray-400 text-sm sm:text-base"
+            >
               {link.name}
             </Link>
           ))}
@@ -70,7 +73,9 @@ const Footer = () => {
 
         {/* Additional Links Section */}
         <div className="mt-6">
-          <p className="text-gray-400 text-sm">Built with love using React & Tailwind CSS</p>
+          <p className="text-gray-400 text-sm">
+            Built with love using React & Tailwind CSS
+          </p>
         </div>
       </div>
     </motion.footer>
